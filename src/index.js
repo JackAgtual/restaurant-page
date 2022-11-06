@@ -1,3 +1,5 @@
 import renderHomepage from './homepage.js'
 
-renderHomepage();
+const content = document.querySelector('#content');
+
+renderHomepage(content);

@@ -1,1 +1,1 @@
-(()=>{"use strict";console.log("test from homepage")})();
+(()=>{"use strict";document.querySelector("#content"),console.log("test from homepage")})();

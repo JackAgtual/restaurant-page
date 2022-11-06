@@ -1,3 +1,3 @@
-export default function renderHomepage() {
+export default function renderHomepage(content) {
     console.log('test from homepage');
 }
