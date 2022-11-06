@@ -69,7 +69,7 @@ export default function renderMenu(content) {
     menu.forEach(menuSection => {
 
         const sectionHeader = document.createElement('h2');
-        sectionHeader.classList.add('grid-el');
+        sectionHeader.classList.add('grid-el', 'menu-section');
         sectionHeader.innerText = `${menuSection.category}`;
         menuPage.appendChild(sectionHeader);
 
