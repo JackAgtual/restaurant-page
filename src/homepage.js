@@ -1,7 +1,7 @@
 export default function renderHomepage(content) {
 
-    const homepage = document.createElement('div');
-    homepage.classList.add('homepage');
+    const homePage = document.createElement('div');
+    homePage.classList.add('display');
 
     const grieElContent = [
         `
@@ -34,9 +34,9 @@ export default function renderHomepage(content) {
         const gridEl = document.createElement('div');
         gridEl.classList.add('grid-el');
         gridEl.innerHTML = htmlContent;
-        homepage.appendChild(gridEl);
+        homePage.appendChild(gridEl);
     });
 
-    content.appendChild(homepage);
+    content.appendChild(homePage);
 }
 

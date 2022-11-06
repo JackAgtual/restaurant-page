@@ -13,7 +13,7 @@ export default function renderMenu(content) {
     ];
 
     const menuPage = document.createElement('div');
-    menuPage.classList.add('homepage')
+    menuPage.classList.add('display')
 
     menuItems.forEach(item => {
 
