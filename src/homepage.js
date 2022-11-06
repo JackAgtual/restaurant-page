@@ -1,3 +1,5 @@
 export default function renderHomepage(content) {
-    console.log('test from homepage');
+    // const title = document.createElement('h1');
+    // title.innerText = 'Restaurant Page';
+    // content.appendChild(title);
 }
