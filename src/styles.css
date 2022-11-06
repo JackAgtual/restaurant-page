@@ -1,5 +1,22 @@
+:root {
+    --my-width: max(20rem, 75vw);
+}
+
 body {
     background-color: #e0f2fe;
+}
+
+button {
+    border: none;
+    background-color: #94a3b8;
+    padding: 0.75rem 2rem;
+    border-radius: 2px;
+}
+
+button:hover {
+    color: #e0f2fe;
+    background-color: #475569;
+    transition: 0.15s;
 }
 
 li {
@@ -8,6 +25,32 @@ li {
 
 ul {
     padding: 0;
+}
+
+.header {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+}
+
+.header > ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+    width: var(--my-width);
+    justify-content: space-between;
+}
+
+@media (max-width: 350px) {
+    .header > ul {
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        row-gap: 0.75rem;
+    }
+}
+
+.header > ul > li {
+    display: grid;
 }
 
 #content {
@@ -22,7 +65,7 @@ ul {
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    width: max(20rem, 50vw);
+    width: var(--my-width);
 }
 
 .grid-el {
