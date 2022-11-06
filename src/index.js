@@ -1,1 +1,3 @@
-console.log("test");
+import renderHomepage from 'homepage.js'
+
+renderHomepage();
