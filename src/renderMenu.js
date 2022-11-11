@@ -8,6 +8,7 @@ import iceCream   from './images/ice_cream.jpeg'
 import cake       from './images/cake.jpeg'
 
 export default function renderMenu(content) {
+    const picSize = 5; // rem
     const menu = [
         {
             category: 'Drinks',
@@ -93,15 +94,17 @@ export default function renderMenu(content) {
         
         menuSection.items.forEach(item => {
             const gridEl = document.createElement('div');
-            gridEl.classList.add('grid-el');
+            gridEl.classList.add('menu-item');
     
             gridEl.innerHTML = `
-                <h2>${item.title}</h2>
-                <p>$${item.price}</p>
-                <p>${item.description}</p>
+                <div class="menu-description">
+                    <h2>${item.title}</h2>
+                    <p>${item.description}</p>
+                    <p>$${item.price}</p>
+                </div>
                 <div class="menu-img" 
                     style="
-                        padding: 7rem;
+                        padding: ${picSize}rem;
                         background: url(${item.img});
                         background-repeat: no-repeat;
                         background-size: contain;

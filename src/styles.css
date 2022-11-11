@@ -1,9 +1,14 @@
 :root {
     --my-width: max(20rem, 75vw);
+    --background-color: white;
 }
 
 body {
-    background-color: #e0f2fe;
+    background-color: var(--background-color);
+}
+
+h2, p {
+    margin: 0;
 }
 
 button {
@@ -72,10 +77,27 @@ ul {
 .grid-el {
     display: grid;
     justify-items: center;
-    background-color: #7dd3fc;
-    padding: 0px 5rem;
-    border-radius: 10px;
-    border: 2px solid #0c4a6e;
+    background-color: var(--background-color);
+    border-radius: 2px;
+    /* padding: 0px 5rem; */
+    border: 2px solid grey;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--background-color);
+    border-radius: 2px;
+    border: 2px solid grey;
+}
+
+.menu-description {
+    margin-left: 2rem;
+}
+
+.menu-description > *:not(:last-child) {
+    margin-bottom: 1rem;
 }
 
 .menu-section {
