@@ -89,7 +89,7 @@ ul {
     justify-content: space-between;
     background-color: var(--background-color);
     border-radius: 2px;
-    border: 2px solid grey;
+    border: 1px solid grey;
 }
 
 .menu-description {

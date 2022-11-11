@@ -1,11 +1,15 @@
-import soda       from './images/soda.jpeg'
-import beer       from './images/beer.jpeg'
-import macNcheese from './images/mac_n_cheese.jpeg'
-import salad      from './images/salad.jpeg'
-import pizza      from './images/pizza.jpeg'
-import burger     from './images/hamburger.jpeg'
-import iceCream   from './images/ice_cream.jpeg'
-import cake       from './images/cake.jpeg'
+import soda        from './images/soda.jpeg'
+import beer        from './images/beer.jpeg'
+import appleJuice  from './images/appleJuice.jpeg'
+import orangeJuice from './images/orangeJuice.jpeg'
+import macNcheese  from './images/mac_n_cheese.jpeg'
+import garlicFries from './images/garlicFries.jpeg'
+import salad       from './images/salad.jpeg'
+import pizza       from './images/pizza.jpeg'
+import burger      from './images/hamburger.jpeg'
+import hotDog      from './images/hotDog.jpeg'
+import iceCream    from './images/ice_cream.jpeg'
+import cake        from './images/cake.jpeg'
 
 export default function renderMenu(content) {
     const picSize = 5; // rem
@@ -24,6 +28,18 @@ export default function renderMenu(content) {
                     price: 8,
                     description: 'Ask the waiter for our beers on tap',
                     img: beer
+                },
+                {
+                    title: 'Apple juice',
+                    price: 3,
+                    description: 'Fresh apple juice',
+                    img: appleJuice
+                },
+                {
+                    title: 'Orange juice',
+                    price: 4,
+                    description: 'Fresh squeezed orange juice',
+                    img: orangeJuice
                 }
             ]
         },
@@ -31,9 +47,9 @@ export default function renderMenu(content) {
             category: 'Appetizers',
             items: [
                 {
-                    title: 'Mac n cheese',
+                    title: 'Mac n\' cheese',
                     price: 6,
-                    description: 'Classic mac n cheese',
+                    description: 'Classic mac n\' cheese',
                     img: macNcheese
                 },
                 {
@@ -41,6 +57,12 @@ export default function renderMenu(content) {
                     price: 22,
                     description: 'A plain salad',
                     img: salad
+                },
+                {
+                    title: 'Garlic fries',
+                    price: 9,
+                    description: 'Crispy garlic fries',
+                    img: garlicFries
                 }
             ]
             
@@ -51,14 +73,20 @@ export default function renderMenu(content) {
                 {
                     title: 'Pizza',
                     price: 12,
-                    description: 'A cheese pizza',
+                    description: 'Pepperoni pizza with bazil and extra mozzarella',
                     img: pizza
                 },
                 {
                     title: 'Burger', 
                     price: 16,
-                    description: 'Cheeseburger',
+                    description: 'McDonald\'s burger',
                     img: burger
+                },
+                {
+                    title: 'Hot dog',
+                    price: 8,
+                    description: 'Steamed hot dog',
+                    img: hotDog
                 }
             ]
         },
@@ -74,7 +102,7 @@ export default function renderMenu(content) {
                 {
                     title: 'Cake',
                     price: 12,
-                    description: 'Your choice of chocolate or red velvet cake',
+                    description: 'Chocolate or red velvet cake',
                     img: cake
                 }
             ]
