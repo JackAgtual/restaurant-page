@@ -8,10 +8,6 @@ export default function renderHomepage(content) {
         <h1>My Restaurant</h1>
         `,
         `
-        <h2>About</h2>
-        <p>This is the about page of our restaurant. We serve food.</p>
-        `,
-        `
         <h2>Hours</h2>
         <ul>
             <li>Day: 9:00 - 5:00</li>

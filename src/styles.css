@@ -109,3 +109,8 @@ ul {
     color: #f0f9ff;
     box-shadow: 6px 6px 2px 1px #cbd5e1;
 }
+
+.about {
+    text-align: center;
+    margin-top: 3rem;
+}
