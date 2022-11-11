@@ -9,15 +9,15 @@ export default function renderHomepage(content) {
         `,
         `
         <h2>Hours</h2>
-        <ul>
-            <li>Day: 9:00 - 5:00</li>
-            <li>Day: 9:00 - 5:00</li>
-            <li>Day: 9:00 - 5:00</li>
-            <li>Day: 9:00 - 5:00</li>
-            <li>Day: 9:00 - 5:00</li>
-            <li>Day: 9:00 - 5:00</li>
-            <li>Day: 9:00 - 5:00</li>
-        </ul>
+        <div class="hrs-container">
+            <div class="day">Monday:</div><div class="time">9:00 - 5:00</div>
+            <div class="day">Tuesday:</div><div class="time">9:00 - 5:00</div>
+            <div class="day">Wednesday:</div><div class="time">9:00 - 5:00</div>
+            <div class="day">Thursday:</div><div class="time">9:00 - 5:00</div>
+            <div class="day">Friday:</div><div class="time">9:00 - 5:00</div>
+            <div class="day">Saturday:</div><div class="time">9:00 - 5:00</div>
+            <div class="day">Sunday:</div><div class="time">9:00 - 5:00</div>
+        </div>
         `,
         `
         <h2>Location</h2>

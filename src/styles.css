@@ -79,6 +79,23 @@ ul {
     text-align: center;
 }
 
+.home-item > h2 {
+    margin-bottom: 0.5rem;
+}
+.hrs-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+}
+
+.day {
+    justify-self: end;
+}
+
+.time {
+    justify-self: start;
+}
+
 .grid-el, 
 .menu-item {
     border-radius: 2px;
