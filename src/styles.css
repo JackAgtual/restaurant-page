@@ -75,6 +75,10 @@ ul {
     width: var(--my-width);
 }
 
+.home-item {
+    text-align: center;
+}
+
 .grid-el, 
 .menu-item {
     border-radius: 2px;

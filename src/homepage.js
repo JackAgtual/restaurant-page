@@ -5,7 +5,7 @@ export default function renderHomepage(content) {
 
     const grieElContent = [
         `
-        <h1>My Restaurant</h1>
+        <h1 id="restaurant-name">My Restaurant</h1>
         `,
         `
         <h2>Hours</h2>
@@ -28,7 +28,7 @@ export default function renderHomepage(content) {
 
     grieElContent.forEach(htmlContent => {
         const gridEl = document.createElement('div');
-        gridEl.classList.add('grid-el');
+        gridEl.classList.add('home-item');
         gridEl.innerHTML = htmlContent;
         homePage.appendChild(gridEl);
     });
