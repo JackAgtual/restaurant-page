@@ -99,7 +99,15 @@ export default function renderMenu(content) {
                 <h2>${item.title}</h2>
                 <p>$${item.price}</p>
                 <p>${item.description}</p>
-                <img src="${item.img}" alt="">
+                <div class="menu-img" 
+                    style="
+                        padding: 7rem;
+                        background: url(${item.img});
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        background-position: center;
+                    "
+                ></div>
             `;
     
             menuPage.appendChild(gridEl)
